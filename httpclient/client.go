@@ -10,7 +10,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	heimdall "github.com/gojek/heimdall/v7"
+	heimdall "github.com/panlq/heimdall/v7"
 )
 
 // Client is the http client implementation

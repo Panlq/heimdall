@@ -10,9 +10,10 @@ import (
 	"github.com/afex/hystrix-go/hystrix"
 	metricCollector "github.com/afex/hystrix-go/hystrix/metric_collector"
 	"github.com/afex/hystrix-go/plugins"
-	"github.com/gojek/heimdall/v7"
-	"github.com/gojek/heimdall/v7/httpclient"
 	"github.com/pkg/errors"
+
+	heimdall "github.com/panlq/heimdall/v7"
+	"github.com/panlq/heimdall/v7/httpclient"
 )
 
 type fallbackFunc func(error) error
@@ -48,6 +49,7 @@ const (
 )
 
 var _ heimdall.Client = (*Client)(nil)
+
 var err5xx = errors.New("server returned 5xx status code")
 
 // NewClient returns a new instance of hystrix Client

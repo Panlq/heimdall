@@ -10,10 +10,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gojek/heimdall/v7"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
+
+	heimdall "github.com/panlq/heimdall/v7"
 )
 
 func TestHTTPRequestWithContextDoSuccess(t *testing.T) {

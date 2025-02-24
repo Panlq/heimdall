@@ -6,8 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gojek/heimdall/v7"
 	"github.com/stretchr/testify/assert"
+
+	heimdall "github.com/panlq/heimdall/v7"
 )
 
 func TestOptionsAreSet(t *testing.T) {
